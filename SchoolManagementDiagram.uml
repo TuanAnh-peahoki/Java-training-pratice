@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>model</OriginalElement>
+  <nodes>
+    <node x="129.24166666666667" y="81.0">model.Teachers</node>
+    <node x="6.0" y="0.0">model.People</node>
+    <node x="69.625" y="243.0">model.School</node>
+    <node x="0.0" y="81.0">model.Students</node>
+    <node x="146.83333333333331" y="0.0">model.Subjects</node>
+    <node x="54.625" y="162.0">model.Classrooms</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="model.Classrooms" target="model.Students" relationship="TO_MANY">
+      <point x="-15.75" y="-15.5" />
+      <point x="101.875" y="137.0" />
+      <point x="81.0" y="137.0" />
+      <point x="27.0" y="15.5" />
+    </edge>
+    <edge source="model.Teachers" target="model.People" relationship="GENERALIZATION">
+      <point x="-35.66666666666666" y="-15.5" />
+      <point x="147.075" y="56.0" />
+      <point x="54.0" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="model.School" target="model.Classrooms" relationship="TO_MANY">
+      <point x="-24.0" y="-15.5" />
+      <point x="93.625" y="218.0" />
+      <point x="86.125" y="218.0" />
+      <point x="-31.5" y="15.5" />
+    </edge>
+    <edge source="model.Teachers" target="model.Subjects" relationship="TO_MANY">
+      <point x="7.105427357601002E-15" y="-15.5" />
+      <point x="182.74166666666667" y="56.0" />
+      <point x="173.08333333333331" y="56.0" />
+      <point x="-26.25" y="15.5" />
+    </edge>
+    <edge source="model.Classrooms" target="model.Teachers" relationship="TO_MANY">
+      <point x="47.25" y="-15.5" />
+      <point x="164.875" y="137.0" />
+      <point x="209.49166666666667" y="137.0" />
+      <point x="26.75" y="15.5" />
+    </edge>
+    <edge source="model.Classrooms" target="model.Students" relationship="DEPENDENCY">
+      <point x="-47.25" y="-15.5" />
+      <point x="70.375" y="137.0" />
+      <point x="27.0" y="137.0" />
+      <point x="-27.0" y="15.5" />
+    </edge>
+    <edge source="model.Students" target="model.People" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="model.School" target="model.Classrooms" relationship="DEPENDENCY">
+      <point x="24.0" y="-15.5" />
+      <point x="141.625" y="218.0" />
+      <point x="149.125" y="218.0" />
+      <point x="31.5" y="15.5" />
+    </edge>
+    <edge source="model.Teachers" target="model.Subjects" relationship="DEPENDENCY">
+      <point x="35.66666666666666" y="-15.5" />
+      <point x="218.4083333333333" y="56.0" />
+      <point x="225.58333333333331" y="56.0" />
+      <point x="26.25" y="15.5" />
+    </edge>
+    <edge source="model.Classrooms" target="model.Teachers" relationship="DEPENDENCY">
+      <point x="15.75" y="-15.5" />
+      <point x="133.375" y="137.0" />
+      <point x="155.99166666666667" y="137.0" />
+      <point x="-26.75" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="48.0" y="132.0" />
+  <SelectedNodes>
+    <node>model.Students</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
